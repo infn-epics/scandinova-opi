@@ -2,8 +2,7 @@
 <display version="2.0.0">
   <name>PPT Modulator</name>
   <macros>
-    <P>PPT</P>
-    <R>MOD1</R>
+    
   </macros>
   <width>1200</width>
   <height>1750</height>
