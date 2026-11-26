@@ -2,7 +2,7 @@
 <display version="2.0.0">
   <name>PPT Modulator Launcher</name>
   <width>450</width>
-  <height>180</height>
+  <height>225</height>
   <background_color>
     <color red="240" green="240" blue="240">
     </color>
@@ -192,7 +192,7 @@
     </actions>
     <text>MOD002 Main Panel</text>
     <x>20</x>
-    <y>140</y>
+    <y>165</y>
     <width>200</width>
     <height>40</height>
     <font>
