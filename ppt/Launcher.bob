@@ -2,7 +2,7 @@
 <display version="2.0.0">
   <name>PPT Modulator Launcher</name>
   <width>450</width>
-  <height>225</height>
+  <height>240</height>
   <background_color>
     <color red="240" green="240" blue="240">
     </color>
@@ -26,7 +26,7 @@
   </widget>
   <widget type="label" version="2.0.0">
     <name>Subtitle</name>
-    <text>Test IOC: P=SPARC:MOD:PPT, R=MOD001</text>
+    <text>Test IOC: P=SPARC:MOD:PPT, R=MOD001 / MOD002</text>
     <x>10</x>
     <y>40</y>
     <width>430</width>
@@ -108,7 +108,7 @@
     <name>HVMaxLabel</name>
     <text>HVMAX:</text>
     <x>20</x>
-    <y>125</y>
+    <y>118</y>
     <width>60</width>
     <height>25</height>
     <font>
@@ -120,7 +120,7 @@
     <name>HVMaxValue</name>
     <pv_name>SPARC:MOD:PPT:MOD001:HVPS:VoltageMax</pv_name>
     <x>80</x>
-    <y>125</y>
+    <y>118</y>
     <width>60</width>
     <height>25</height>
     <font>
@@ -138,7 +138,7 @@
     <name>ConnectionLabel</name>
     <text>Connection:</text>
     <x>200</x>
-    <y>125</y>
+    <y>118</y>
     <width>90</width>
     <height>25</height>
     <font>
@@ -150,7 +150,7 @@
     <name>ConnectionLED</name>
     <pv_name>SPARC:MOD:PPT:MOD001:RawData.SEVR</pv_name>
     <x>290</x>
-    <y>125</y>
+    <y>118</y>
     <width>25</width>
     <height>25</height>
     <off_color>
@@ -166,7 +166,7 @@
     <name>ConnectionStatus</name>
     <text>(Green=OK)</text>
     <x>320</x>
-    <y>125</y>
+    <y>118</y>
     <height>25</height>
     <font>
       <font family="Liberation Sans" style="ITALIC" size="10.0">
@@ -192,7 +192,7 @@
     </actions>
     <text>MOD002 Main Panel</text>
     <x>20</x>
-    <y>165</y>
+    <y>155</y>
     <width>200</width>
     <height>40</height>
     <font>
@@ -208,5 +208,110 @@
       </color>
     </background_color>
     <tooltip>Open main monitoring and control panel</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>StatusInterlocksBtn_1</name>
+    <actions>
+      <action type="open_display">
+        <description>PPT MOD002 - Status &amp; Interlocks</description>
+        <file>ppt-status-interlocks.bob</file>
+        <macros>
+          <P>SPARC:MOD:PPT</P>
+          <R>MOD002</R>
+        </macros>
+        <target>window</target>
+      </action>
+    </actions>
+    <text>Status &amp; Interlocks</text>
+    <x>230</x>
+    <y>155</y>
+    <width>200</width>
+    <height>40</height>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="180" green="100" blue="0">
+      </color>
+    </background_color>
+    <tooltip>Open status and interlocks detail panel</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>HVMaxLabel_1</name>
+    <text>HVMAX:</text>
+    <x>20</x>
+    <y>203</y>
+    <width>60</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="12.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>HVMaxValue_1</name>
+    <pv_name>SPARC:MOD:PPT:MOD002:HVPS:VoltageMax</pv_name>
+    <x>80</x>
+    <y>203</y>
+    <width>60</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="12.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="255" green="100" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <precision>1</precision>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>ConnectionLabel_1</name>
+    <text>Connection:</text>
+    <x>200</x>
+    <y>203</y>
+    <width>90</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Sans" style="BOLD" size="12.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>ConnectionLED_1</name>
+    <pv_name>SPARC:MOD:PPT:MOD002:RawData.SEVR</pv_name>
+    <x>290</x>
+    <y>203</y>
+    <width>25</width>
+    <height>25</height>
+    <off_color>
+      <color red="0" green="200" blue="0">
+      </color>
+    </off_color>
+    <on_color>
+      <color red="255" green="0" blue="0">
+      </color>
+    </on_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>ConnectionStatus_1</name>
+    <text>(Green=OK)</text>
+    <x>320</x>
+    <y>203</y>
+    <height>25</height>
+    <font>
+      <font family="Liberation Sans" style="ITALIC" size="10.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="100" green="100" blue="100">
+      </color>
+    </foreground_color>
   </widget>
 </display>
