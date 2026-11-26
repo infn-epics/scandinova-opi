@@ -4148,8 +4148,8 @@ PVPool.releasePV(target_pv)
       <pv_name>$(P):$(R):General:InterlockRaw</pv_name>
       <x>350</x>
       <y>70</y>
-      <width>12</width>
-      <height>150</height>
+      <width>10</width>
+      <height>160</height>
       <numBits>16</numBits>
       <horizontal>false</horizontal>
     </widget>
